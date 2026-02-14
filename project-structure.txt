@@ -1,0 +1,23 @@
+==> Authentication
+    => register
+    => login
+    => logout (token blacklisting)
+    => [otp based registration]
+
+==> post
+    => create
+    => can see the feed
+    => like posts (collection types)
+    => save post
+
+==> users
+    => followers
+    => following
+
+user = {
+    username:String,
+    email:String,
+    password:String,
+    bio:String,
+    profle_image:String
+}
