@@ -21,3 +21,10 @@ user = {
     bio:String,
     profle_image:String
 }
+
+post create = {
+    caption: String,
+    img_url: String,
+    user: userId,
+    createdAt: Date-time,
+}
