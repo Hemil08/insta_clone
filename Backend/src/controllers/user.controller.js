@@ -34,14 +34,15 @@ async function followUserController(req,res){
         })
     }
 
-    const followReord = await followModel.create({
+
+    const followRecord = await followModel.create({
         follower: followerUsername,
         followee: followeeUsername
     })
 
     res.status(201).json({
         message: `You are now following ${followeeUsername}`,
-        follow: followReord
+        follow: followRecord
     })
 
 }
