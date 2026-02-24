@@ -10,5 +10,9 @@ export const router = createBrowserRouter([
     {
         path:'/register',
         element: <Register/>
+    },
+    {
+        path:'/',
+        element: <h1>Welcome to 4 layer architecture of react</h1>
     }
 ])  
