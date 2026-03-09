@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken")
 async function registerController(req,res){
     const { email, username, password, bio,  profileImage } = req.body
 
-    const isUserExistsByEmail = await userModel.findOne({ email })
+    // const isUserExistsByEmail = await userModel.findOne({ email })
 
     // if(isUserExistsByEmail){
     //     return res.status(409).json({
@@ -76,7 +76,7 @@ async function loginController (req,res){
             {email},
             {username}
         ]
-    })
+    }).select("+password")
 
     if(!user){
         return res.status(404).json({
