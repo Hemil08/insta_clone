@@ -7,7 +7,7 @@ import Nav from '../../shared/components/Nav'
 
 const Feed = () => {
 
-  const {feed,handleGetFeed,loading, handleLike, handleUnLike} = usePost()
+  const {feed,handleGetFeed,loading, handleLike, handleUnLike } = usePost()
 
   useEffect(()=>{
     handleGetFeed()
